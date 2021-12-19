@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/news_image_display"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/news_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@drawable/news_image_bg"
+            android:src="@drawable/ic_launcher_background"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/headline_text_view"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/news_image_display"
+            android:fontFamily="@font/montserrat"
+            android:text="News headline"
+            android:textColor="#323131"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/news_headline2_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/headline_text_view"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="70dp"
+            android:layout_toRightOf="@+id/news_image_display"
+            android:fontFamily="@font/montserrat"
+            android:text="by Anmon Sharma,12th December 2021 11.50am"
+            android:textSize="11sp"
+            android:textStyle="normal" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/news_text_view"
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/news_image_display"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat"
+            android:text=" Actress Nora Fatehi and singer Guru Randhawa's pictures from a beach in Goa went viral on social media, with fans speculating that the duo are dating. New couple? a fan commented on social media, another wrote, Looking good together. The duo had collaborated for a song titled 'Naach Meri Rani' in 2020."
+            android:textColor="#3A3A3A"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
